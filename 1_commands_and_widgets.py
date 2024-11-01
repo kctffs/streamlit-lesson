@@ -41,8 +41,8 @@ st.write("---")
 # my_list = [10,50,409] # Python list
 # my_dict = {'Number':[1,2,3], 'Color': ['Blue', 'Yellow', 'Green']} # python dictionary
 
-##### we will use pandas and numpy to generate a DataFrame. 
-##### For now, think of a DataFrame as a table with columns, rows and data.
+# #### we will use pandas and numpy to generate a DataFrame. 
+# #### For now, think of a DataFrame as a table with columns, rows and data.
 # import numpy as np
 # import pandas as pd 
 # np.random.seed(1)
@@ -69,10 +69,10 @@ st.write("---")
 ### Display plots ###
 ################################################################################
 
-##### We will use matplotlib, seaborn and plotly  for data visualization
-##### for now, we just need to understand the plotting capability
-##### the commands and their usability will come clear across the lessons and walkthrough project
-##### we will use a generated DataFrame
+### We will use matplotlib, seaborn and plotly  for data visualization
+### for now, we just need to understand the plotting capability
+### the commands and their usability will come clear across the lessons and walkthrough project
+### we will use a generated DataFrame
 # import numpy as np
 # import pandas as pd 
 # np.random.seed(1)
@@ -80,7 +80,7 @@ st.write("---")
 #                         "Col2":np.random.randint(low=25,high=80,size=10)
 #                         })
 
-#### and will plot the data
+# ### and will plot the data
 # import matplotlib.pyplot as plt
 # import seaborn as sns  
 # st.write("* Plot with Matplotlib/Seaborn") # we create a figure and plot the data
@@ -107,10 +107,10 @@ st.write("---")
 ### Optimize performance ###
 ################################################################################
 
-#### Currently, every time you reload the dashboard page so is the script
-#### this may cause a delay in your app, i.e.: you may reload multiple time the same data 
-#### to solve that, you can cache your data by adding a decorator @st.cache in a function that loads your data
-#### in this example, you might not notice the speed difference, but in real applications, this difference is noticeable
+# ### Currently, every time you reload the dashboard page so is the script
+# ### this may cause a delay in your app, i.e.: you may reload multiple time the same data 
+# ### to solve that, you can cache your data by adding a decorator @st.cache in a function that loads your data
+# ### in this example, you might not notice the speed difference, but in real applications, this difference is noticeable
 
 # import numpy as np
 # import pandas as pd 
@@ -133,7 +133,7 @@ st.write("---")
 ### Display widgets ###
 ################################################################################
 
-##### Feel free to play around with all widgets options
+#### Feel free to play around with all widgets options
 # if st.button('Hit me'):  # if you click the button, it is True.
 #     st.write("Oh, you did!")
 # else:
@@ -179,19 +179,19 @@ st.write("---")
 
 
 
-#### You probably noticed there is not much value when you randomly create widgets
-#### The idea is to assign them to a variable, and this variable is used to interact with the application
+# ### You probably noticed there is not much value when you randomly create widgets
+# ### The idea is to assign them to a variable, and this variable is used to interact with the application
 # option = st.selectbox(label='Pick one:', options=[1,2,3,'A'], key="2")
 # st.write(f"* I see you selected {option}, and its type is {type(option)}")
 # st.write("---")
 
 
 
-#### you can create 'columns' (or split the row space) and assign multiple items/widgets
-#### you should use st.beta_columns() and inform amount of columns
-#### that will be assigned to individual variables, i.e.: if there were three columns, you would have col1, col2, col3
-#### you will define the content on each variable with the command "with:"
-#### this example prints a list in the first column and display a widget in the second column
+# ### you can create 'columns' (or split the row space) and assign multiple items/widgets
+# ### you should use st.beta_columns() and inform amount of columns
+# ### that will be assigned to individual variables, i.e.: if there were three columns, you would have col1, col2, col3
+# ### you will define the content on each variable with the command "with:"
+# ### this example prints a list in the first column and display a widget in the second column
 
 # col1, col2 = st.beta_columns(2)
 # with col1:
